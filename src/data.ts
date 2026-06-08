@@ -23,7 +23,7 @@ export const band = {
   tagline: 'Romanian Speed Metal Assault',
   bio: [
     `Forged in Romania in the spring of 2023, RUYNED is a three-headed engine of black, thrash and speed metal — old-school venom sharpened on a modern blade. The members first crossed paths in December 2022 and, by May 2023, had begun carving their name into the Romanian underground.`,
-    `Their sound is unforced and instinctive: "we just write music that we like, and this is how we came up with our sound." Lyrically the band circles death, morbid obsession and the unravelling of the mind — blunt, ugly and unrepentant.`,
+    `Their sound is unforced and instinctive: "we just write the music that we like, and this is how we came up with our sound." Lyrically the band circles death, morbid obsession and the unravelling of the mind — blunt, ugly and unrepentant.`,
     `The self-released demo Morbid Pleasures landed in September 2023. The debut full-length Eternal Torment followed in July 2024 to warm reception from crowds and press alike, with the Sex'n Speed assault arriving in May 2025. Their Osmose Productions debut, Profanum Sacrificium — a concept record on the European witch hunts — descends June 26, 2026.`,
   ],
 }

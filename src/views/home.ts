@@ -82,7 +82,7 @@ const render = (): string => `
 
   <section class="manifesto">
     <blockquote>
-      “We just write music that we like — this is how we came up with our sound.”
+      “We just write the music that we like — this is how we came up with our sound.”
     </blockquote>
     <p class="manifesto__body">${band.bio[0]}</p>
     <a class="btn btn--ghost" href="#/band">Read the full story</a>
