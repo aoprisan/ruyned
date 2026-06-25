@@ -1,4 +1,4 @@
-import { band, latestRelease, releases } from '../data'
+import { band, latestRelease, releases, spotify } from '../data'
 import { marquee, divider, sectionHead, linkBtn } from '../lib/ui'
 import type { RouteDef } from '../lib/router'
 
@@ -21,7 +21,7 @@ const render = (): string => `
            width="3000" height="1075" fetchpriority="high" />
       <p class="hero__tagline">${band.tagline} — est. ${band.foundedRoman}</p>
       <div class="hero__cta">
-        ${linkBtn('Listen', latestRelease.bandcamp, 'solid')}
+        ${linkBtn('Listen', spotify, 'solid')}
         <a class="btn btn--ghost" href="#/music">Discography</a>
         <a class="btn btn--ghost" href="#/live">Live Raids</a>
       </div>
