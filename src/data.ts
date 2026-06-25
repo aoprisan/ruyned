@@ -214,3 +214,6 @@ export const links: Link[] = [
 ]
 
 export const latestRelease = releases[0]
+
+/** Spotify artist page — the main "Listen" destination. */
+export const spotify = links.find((l) => l.label === 'Spotify')!.url
