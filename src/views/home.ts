@@ -98,6 +98,10 @@ ${linkBtn(
   <p>&ldquo;Gran finale con la furia primordiale di Witches Gall&ouml;w, che vi porter&agrave; a premere subito il pulsante play un&rsquo;altra volta. Adorabili.&rdquo;</p>
   <a href="https://metalskunk.com/2026/08/06/ruyned-bewitched-hellionight-speedslut-recensione-review/" target="_blank" rel="noopener noreferrer" class="press__source">Metal Skunk (IT)</a>
 </blockquote>
+<blockquote class="press__item">
+  <p>&ldquo;Ruyned demonstrates so much of what makes true old school furious Thrash Metal so instantaneously addictive.&rdquo;</p>
+  <a href="https://www.vm-underground.com/review/ruyned-profanum-sacrificium/" target="_blank" rel="noopener noreferrer" class="press__source">VM-Underground</a>
+</blockquote>
     <blockquote class="press__item">
   <p>&ldquo;... trupa din Timi&#537;oara face parte din categoria restr&acirc;ns&#259; a forma&#539;iilor rom&acirc;ne&#537;ti de thrash metal care pot sta f&#259;r&#259; complexe al&#259;turi de multe dintre numele actuale ale scenei interna&#539;ionale.&rdquo;</p>
   <a href="https://metalfan.ro/2026/07/21/ruyned-profanum-sacrificium/" target="_blank" rel="noopener noreferrer" class="press__source">MetalFan</a>
