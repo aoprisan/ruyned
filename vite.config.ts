@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 // Project is published as a GitHub Pages *project* site at
 // https://<user>.github.io/ruyned/ — hence the base path below.
 // If you fork/rename the repo, change `base` to "/<repo-name>/".
-const BASE = '/ruyned/'
+const BASE = '/'
 
 export default defineConfig({
   base: BASE,
@@ -50,6 +50,13 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,webp,woff2}'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // Explicit so visitor auto-update keeps working even if
+        // registerType/injectRegister change: a new worker must take
+        // control immediately (main.ts reloads on activation) and drop
+        // stale precaches.
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
       },
       devOptions: { enabled: false },
     }),

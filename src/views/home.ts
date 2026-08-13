@@ -1,4 +1,4 @@
-import { band, latestRelease, releases, spotify } from '../data'
+import { band, latestRelease, releases } from '../data'
 import { marquee, divider, sectionHead, linkBtn } from '../lib/ui'
 import type { RouteDef } from '../lib/router'
 
@@ -21,7 +21,7 @@ const render = (): string => `
            width="3000" height="1075" fetchpriority="high" />
       <p class="hero__tagline">${band.tagline} — est. ${band.foundedRoman}</p>
       <div class="hero__cta">
-        ${linkBtn('Listen', spotify, 'solid')}
+        ${linkBtn('Listen', 'https://open.spotify.com/artist/05h5BfOz6eeltzw1Ewl8U5', 'solid')}
         <a class="btn btn--ghost" href="#/music">Discography</a>
         <a class="btn btn--ghost" href="#/live">Live Raids</a>
       </div>
@@ -60,29 +60,70 @@ const render = (): string => `
       </ol>
       <div class="feature__cta">
         ${linkBtn(
-          latestRelease.preorder ? 'Pre-order on Bandcamp' : 'Get it on Bandcamp',
+          'Order at Bandcamp',
           latestRelease.bandcamp,
           'solid',
         )}
-        ${
-          latestRelease.preorder
-            ? linkBtn(
-                'Pre-order on headbangershop.ro',
-                'https://www.headbangershop.ro/?s=Ruyned+Profanum+Sacrificium&post_type=product&dgwt_wcas=1',
-                'solid',
-              )
-            : ''
-        }
+        ${linkBtn(
+  'Order at Headbangershop.ro',
+  'https://www.headbangershop.ro/?s=Ruyned+Profanum+Sacrificium&post_type=product&dgwt_wcas=1',
+  'solid',
+)}
+${linkBtn(
+  'Order at Osmose',
+  'https://www.osmoseproductions.com/liste/index.cfm?what=all&lng=2&tete=ruyned',
+  'solid',
+)}
         <a class="btn btn--ghost" href="#/music">All releases</a>
       </div>
     </div>
   </section>
 
+  <section class="press">
+  <div class="press__interview">
+  <p class="press__interview-label">Featured Interview</p>
+  <a href="https://metalfan.ro/2026/08/11/interviu-ruyned-sexn-speed-is-all-you-need/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Sex&rsquo;n Speed Is All You Need &mdash; Metalfan.ro &rarr;</a>
+</div>
+  ${sectionHead('As heard by', 'Press')}
+  <div class="press__grid">
+    <blockquote class="press__item">
+      <p>&ldquo;Plays thrash the way the old school intended&mdash;at furious speeds with the subtlety of an uppercut to the jawbone.&rdquo;</p>
+      <a href="https://www.angrymetalguy.com/ruyned-profanum-sacrificium-review/" target="_blank" rel="noopener noreferrer" class="press__source">Angry Metal Guy</a>
+    </blockquote>
+    <blockquote class="press__item">
+  <p>&ldquo;Ruyned demonstrates so much of what makes true old school furious Thrash Metal so instantaneously addictive.&rdquo;</p>
+  <a href="https://www.vm-underground.com/review/ruyned-profanum-sacrificium/" target="_blank" rel="noopener noreferrer" class="press__source">VM-Underground</a>
+    </blockquote>
+    <blockquote class="press__item">
+  <p>&ldquo;Gran finale con la furia primordiale di Witches Gall&ouml;w, che vi porter&agrave; a premere subito il pulsante play un&rsquo;altra volta. Adorabili.&rdquo;</p>
+  <a href="https://metalskunk.com/2026/08/06/ruyned-bewitched-hellionight-speedslut-recensione-review/" target="_blank" rel="noopener noreferrer" class="press__source">Metal Skunk (IT)</a>
+    </blockquote>
+    <blockquote class="press__item">
+      <p>&ldquo;The two halves of &lsquo;Profanum Sacrificium&rsquo; compliment one another in linear progression wherein the scale and cruelty of the killing portrayed lines up with the riff count.&rdquo;</p>
+      <a href="https://mystificationzine.com/2026/06/19/ruyned-profanum-sacrificium-2026-review/" target="_blank" rel="noopener noreferrer" class="press__source">Mystification Zine</a>
+    </blockquote>
+    <blockquote class="press__item">
+  <p>&ldquo;Incredibly believable, pure, genuine and completely authentic. Pull that old denim vest out of the closet and plug in your cassette player!&rdquo;</p>
+  <a href="https://www.deadlystormzine.com/2026/07/recenzereview-ruyned-profanum.html" target="_blank" rel="noopener noreferrer" class="press__source">Deadly Storm Zine</a>
+</blockquote>
+    <blockquote class="press__item">
+  <p>&ldquo;... trupa din Timi&#537;oara face parte din categoria restr&acirc;ns&#259; a forma&#539;iilor rom&acirc;ne&#537;ti de thrash metal care pot sta f&#259;r&#259; complexe al&#259;turi de multe dintre numele actuale ale scenei interna&#539;ionale.&rdquo;</p>
+  <a href="https://metalfan.ro/2026/07/21/ruyned-profanum-sacrificium/" target="_blank" rel="noopener noreferrer" class="press__source">MetalFan</a>
+</blockquote>
+    <a href="https://www.instagram.com/reel/DZqI6mVJ5BQ/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">Deaf Sparrow &mdash; Review</a>
+  </div>
+  ${sectionHead('Recognition', 'Features')}
+  <ul class="press__features">
+    <li><a href="https://www.facebook.com/thrashmania666/posts/pfbid0264hsx66FThj2yCWQjanqqkBd3qUriVRXWT9FXcLp42VBW8dkkDN5ifTnzS2LmUQfl" target="_blank" rel="noopener noreferrer">>Thrashmania&#92;m/ &mdash; The Top 100 Thrash Metal Albums of the 1st Half of 2026</a></li>
+    <li><a href="https://antichrist-magazine.bandcamp.com/album/antichrist-magazine-vol-vi" target="_blank" rel="noopener noreferrer">Antichrist Magazine &mdash; Compilation Vol. VI</a></li>
+  </ul>
+</section>
+
   ${divider()}
 
   <section class="manifesto">
     <blockquote>
-      “We just write the music that we like — this is how we came up with our sound.”
+      “We just write music that we like — this is how we came up with our sound.”
     </blockquote>
     <p class="manifesto__body">${band.bio[0]}</p>
     <a class="btn btn--ghost" href="#/band">Read the full story</a>

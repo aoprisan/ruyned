@@ -23,7 +23,7 @@ export const band = {
   tagline: 'Romanian Speed Metal Assault',
   bio: [
     `Forged in Romania in the spring of 2023, RUYNED is a three-headed engine of black, thrash and speed metal — old-school venom sharpened on a modern blade. The members first crossed paths in December 2022 and, by May 2023, had begun carving their name into the Romanian underground.`,
-    `Their sound is unforced and instinctive: "we just write the music that we like, and this is how we came up with our sound." Lyrically the band circles death, morbid obsession and the unravelling of the mind — blunt, ugly and unrepentant.`,
+    `Their sound is unforced and instinctive: "we just write music that we like, and this is how we came up with our sound." Lyrically the band circles death, morbid obsession and the unravelling of the mind — blunt, ugly and unrepentant.`,
     `The self-released demo Morbid Pleasures landed in September 2023. The debut full-length Eternal Torment followed in July 2024 to warm reception from crowds and press alike, with the Sex'n Speed assault arriving in May 2025. Their Osmose Productions debut, Profanum Sacrificium — a concept record on the European witch hunts — descends June 26, 2026.`,
   ],
 }
@@ -86,7 +86,8 @@ export const releases: Release[] = [
     cover: asset('covers/profanum-sacrificium.jpg'),
     blurb:
       'A blasphemous speed metal assault laced with black, thrash and heavy metal — the first half raw violence and decadence, the second a conceptual descent into the European witch hunts of the 15th–17th centuries. The Osmose Productions debut.',
-    bandcamp: 'https://www.osmoseproductions.com/liste/index.cfm?what=all&lng=2&tete=ruyned',
+    bandcamp: 'https://ruyned.bandcamp.com/album/profanum-sacrificium',
+    preorder: false,
     label: 'Osmose Productions',
     tracks: [
       { n: 1, title: 'Intro' },
@@ -163,6 +164,7 @@ export interface Show {
   billing: string
   venue: string
   city: string
+  url?: string
 }
 
 /** Announced upcoming shows. */
@@ -172,13 +174,22 @@ export const upcomingShows: Show[] = [
     billing: 'Live',
     venue: 'Phoenix Club',
     city: 'Constanța, RO',
+    url: 'https://www.facebook.com/events/1028043460006566/',
   },
   {
     date: 'Aug 28, 2026',
     billing: 'Open Air Festival',
-    venue: 'Helhammer Open Air',
+    venue: 'Hellhammer Open Air',
     city: 'Belgrade, RS',
+    url: 'https://www.facebook.com/events/780463091543508/',
   },
+  {
+  date: 'Sep 9, 2026',
+  billing: 'w/ Sarcófago',
+  venue: 'Club Flying Circus',
+  city: 'Cluj-Napoca, RO',
+  url: 'https://fb.me/e/6hGmCq04H',
+},
 ]
 
 /** Documented past appearances. Full archive is still being compiled. */
@@ -214,6 +225,3 @@ export const links: Link[] = [
 ]
 
 export const latestRelease = releases[0]
-
-/** Spotify artist page — the main "Listen" destination. */
-export const spotify = links.find((l) => l.label === 'Spotify')!.url
