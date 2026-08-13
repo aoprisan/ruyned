@@ -50,6 +50,13 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,jpg,jpeg,svg,webp,woff2}'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // Explicit so visitor auto-update keeps working even if
+        // registerType/injectRegister change: a new worker must take
+        // control immediately (main.ts reloads on activation) and drop
+        // stale precaches.
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
       },
       devOptions: { enabled: false },
     }),
