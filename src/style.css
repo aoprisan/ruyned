@@ -1204,3 +1204,17 @@ button {
 .press__features li a:hover {
   color: var(--blood);
 }
+.press__interview {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(236,227,210,0.15);
+}
+
+.press__interview-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--blood);
+  font-family: var(--f-impact);
+  margin-bottom: 0.5rem;
+}
